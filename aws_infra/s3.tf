@@ -3,11 +3,10 @@ resource "aws_s3_bucket" "dev_male_female_ingestion" {
   bucket = "dev-male-female-ingestion"
 
   tags = {
-    Name        = "Data platform bucket"
+    Name        = "Data Platform Bucket"
     Environment = "Dev"
-    owner       = "blessing_and_leo"
-    team        = "Data Platform Team"
-    managed_by  = "Mayowa"
+    owner       = "Data Platform Team"
+    managed_by  = "Terraform"
     service     = "airflow"
   }
 }

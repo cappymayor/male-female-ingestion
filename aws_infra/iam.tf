@@ -5,9 +5,8 @@ resource "aws_iam_user" "airflow_user" {
   tags = {
     Name        = "Airflow User"
     Environment = "Dev"
-    owner       = "blessing_and_leo"
-    team        = "Data Platform Team"
-    managed_by  = "Mayowa"
+    owner       = "Data Platform Team"
+    managed_by  = "Terraform"
     service     = "airflow"
   }
 }
@@ -29,9 +28,8 @@ resource "aws_ssm_parameter" "airflow_access_key" {
   tags = {
     Name        = "Airflow Access Key"
     Environment = "Dev"
-    owner       = "blessing_and_leo"
-    team        = "Data Platform Team"
-    managed_by  = "Mayowa"
+    owner       = "Data Platform Team"
+    managed_by  = "Terraform"
     service     = "airflow"
   }
 }
@@ -45,9 +43,8 @@ resource "aws_ssm_parameter" "airflow_secret_key" {
   tags = {
     Name        = "Airflow Secret Key"
     Environment = "Dev"
-    owner       = "blessing_and_leo"
-    team        = "Data Platform Team"
-    managed_by  = "Mayowa"
+    owner       = "Data Platform Team"
+    managed_by  = "Terraform"
     service     = "airflow"
   }
 }

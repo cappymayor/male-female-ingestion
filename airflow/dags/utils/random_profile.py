@@ -1,8 +1,8 @@
 import logging
 
 import awswrangler as wr
-from .aws import aws_session
 
+from .aws import aws_session
 from .fetch_data import fetch_users
 
 all_profiles = fetch_users(3000)
@@ -10,7 +10,6 @@ male_all_profiles = all_profiles[all_profiles["gender"] == "male"]
 female_all_profiles = all_profiles[all_profiles["gender"] == "female"]
 bucket = 'dev-male-female-ingestion'
 col = {"location.postcode": "string"}    # explicit dtype casting to string
-
 
 
 def extract_to_s3():

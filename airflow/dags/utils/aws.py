@@ -1,6 +1,7 @@
 import boto3
 from airflow.models import Variable
 
+
 # Establish connection with AWS and Extract files to AWS S3
 def aws_session():
     session = boto3.Session(

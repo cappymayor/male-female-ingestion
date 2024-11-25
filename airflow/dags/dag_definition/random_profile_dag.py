@@ -1,9 +1,10 @@
 import datetime
 
-from airflow import DAG
 from airflow.operators.python import PythonOperator
-from utils.random_profile import (extract_to_s3, extract_female_to_s3,
-                                  extract_male_to_s3)
+from utils.random_profile import (extract_female_to_s3, extract_male_to_s3,
+                                  extract_to_s3)
+
+from airflow import DAG
 
 DAG_ID = 'random_profile_ingestion'
 

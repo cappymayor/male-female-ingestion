@@ -1,0 +1,6 @@
+config
+logs
+plugins
+dags/__pycache__/*
+dags/dag_definition/__pycache__/*
+dags/utils/__pycache__/*
